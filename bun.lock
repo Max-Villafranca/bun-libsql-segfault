@@ -1,0 +1,72 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "bun-libsql-bug",
+      "dependencies": {
+        "@libsql/client": "0.15.0-pre.1"
+      },
+      "devDependencies": {
+        "@types/node": "^20",
+        "typescript": "^5"
+      }
+    }
+  },
+  "packages": {
+    "@libsql/client": ["@libsql/client@0.15.0-pre.1", "", { "dependencies": { "@libsql/core": "^0.15.0-pre.1", "@libsql/hrana-client": "^0.7.0", "js-base64": "^3.7.5", "libsql": "^0.5.0-pre.2", "promise-limit": "^2.7.0" } }, "sha512-FyE4RMTXIjVUTRDmDGnco0uvhmmy+SaGjfnTy9o4vyOGIeM+hATIi4PIWNQcjWfQMd0hJvc4B8CXlw7ELEfhHQ=="],
+
+    "@libsql/core": ["@libsql/core@0.15.4", "", { "dependencies": { "js-base64": "^3.7.5" } }, "sha512-NMvh6xnn3vrcd7DNehj0HiJcRWB2a8hHhJUTkOBej3Pf3KB21HOmdOUjXxJ5pGbjWXh4ezQBmHtF5ozFhocXaA=="],
+
+    "@libsql/darwin-arm64": ["@libsql/darwin-arm64@0.5.8", "", { "os": "darwin", "cpu": "arm64" }, "sha512-dJRfwCHAKOIgysMbB+PBo3ZmCVuGC02fH57kFEFlqbbUv6wnAZV5g7GErQIv4IlC4VPKAS4RL20fjLUgXE+0Xg=="],
+
+    "@libsql/darwin-x64": ["@libsql/darwin-x64@0.5.8", "", { "os": "darwin", "cpu": "x64" }, "sha512-ua5ngqJy9o4lyjYDzF8c69YbOAwP2TQXPhDURs8l97b09HHFh5/8gWRNor7vYRpsziwp8TC77DdQ0C84+gP5tg=="],
+
+    "@libsql/hrana-client": ["@libsql/hrana-client@0.7.0", "", { "dependencies": { "@libsql/isomorphic-fetch": "^0.3.1", "@libsql/isomorphic-ws": "^0.1.5", "js-base64": "^3.7.5", "node-fetch": "^3.3.2" } }, "sha512-OF8fFQSkbL7vJY9rfuegK1R7sPgQ6kFMkDamiEccNUvieQ+3urzfDFI616oPl8V7T9zRmnTkSjMOImYCAVRVuw=="],
+
+    "@libsql/isomorphic-fetch": ["@libsql/isomorphic-fetch@0.3.1", "", {}, "sha512-6kK3SUK5Uu56zPq/Las620n5aS9xJq+jMBcNSOmjhNf/MUvdyji4vrMTqD7ptY7/4/CAVEAYDeotUz60LNQHtw=="],
+
+    "@libsql/isomorphic-ws": ["@libsql/isomorphic-ws@0.1.5", "", { "dependencies": { "@types/ws": "^8.5.4", "ws": "^8.13.0" } }, "sha512-DtLWIH29onUYR00i0GlQ3UdcTRC6EP4u9w/h9LxpUZJWRMARk6dQwZ6Jkd+QdwVpuAOrdxt18v0K2uIYR3fwFg=="],
+
+    "@libsql/linux-arm64-gnu": ["@libsql/linux-arm64-gnu@0.5.8", "", { "os": "linux", "cpu": "arm64" }, "sha512-6HHZlPbMu+cmCJafg/dwOcWFMu07hTB5teMKU5ke66kqeWLRBnOs5/DnZGVz6q0k+Z4L4UTRbdrnCklR3GmvFg=="],
+
+    "@libsql/linux-arm64-musl": ["@libsql/linux-arm64-musl@0.5.8", "", { "os": "linux", "cpu": "arm64" }, "sha512-QGhZadKk3gvrDHa63U7xQrsqET/43E6L7/15oh7I+SINl8meoZAJNTJNYfOUmPM2lPPfNDgr46v4p5ggo6su0A=="],
+
+    "@libsql/linux-x64-gnu": ["@libsql/linux-x64-gnu@0.5.8", "", { "os": "linux", "cpu": "x64" }, "sha512-HUWxOvLE5W287O/vaHWFpZMqaaebEBZvcUqJJ/E+IcC9kmKc6GqDW+fJkfPfosrpGyPNbYDj0w9pIcck0l/oeA=="],
+
+    "@libsql/linux-x64-musl": ["@libsql/linux-x64-musl@0.5.8", "", { "os": "linux", "cpu": "x64" }, "sha512-hfhkPwqzFroU01xUB7ZXFw3bP+jqcGolGLyhEkeh/Rsoune0ucm1KPrU2tqTBqQP4a7lL0nSL1A37nfjIO61Hw=="],
+
+    "@libsql/win32-x64-msvc": ["@libsql/win32-x64-msvc@0.5.8", "", { "os": "win32", "cpu": "x64" }, "sha512-8hKczus0swLEvXu8N0znWdyFo5QzFnE9mnz7G/sb+eVn+zpPlT6ZdFHZdhQzev9C0to7kvYDj03qESTUIwDiqg=="],
+
+    "@neon-rs/load": ["@neon-rs/load@0.0.4", "", {}, "sha512-kTPhdZyTQxB+2wpiRcFWrDcejc4JI6tkPuS7UZCG4l6Zvc5kU/gGQ/ozvHTh1XR5tS+UlfAfGuPajjzQjCiHCw=="],
+
+    "@types/node": ["@types/node@20.17.46", "", { "dependencies": { "undici-types": "~6.19.2" } }, "sha512-0PQHLhZPWOxGW4auogW0eOQAuNIlCYvibIpG67ja0TOJ6/sehu+1en7sfceUn+QQtx4Rk3GxbLNwPh0Cav7TWw=="],
+
+    "@types/ws": ["@types/ws@8.18.1", "", { "dependencies": { "@types/node": "*" } }, "sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg=="],
+
+    "data-uri-to-buffer": ["data-uri-to-buffer@4.0.1", "", {}, "sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A=="],
+
+    "detect-libc": ["detect-libc@2.0.2", "", {}, "sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw=="],
+
+    "fetch-blob": ["fetch-blob@3.2.0", "", { "dependencies": { "node-domexception": "^1.0.0", "web-streams-polyfill": "^3.0.3" } }, "sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ=="],
+
+    "formdata-polyfill": ["formdata-polyfill@4.0.10", "", { "dependencies": { "fetch-blob": "^3.1.2" } }, "sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g=="],
+
+    "js-base64": ["js-base64@3.7.7", "", {}, "sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw=="],
+
+    "libsql": ["libsql@0.5.8", "", { "dependencies": { "@neon-rs/load": "^0.0.4", "detect-libc": "2.0.2" }, "optionalDependencies": { "@libsql/darwin-arm64": "0.5.8", "@libsql/darwin-x64": "0.5.8", "@libsql/linux-arm64-gnu": "0.5.8", "@libsql/linux-arm64-musl": "0.5.8", "@libsql/linux-x64-gnu": "0.5.8", "@libsql/linux-x64-musl": "0.5.8", "@libsql/win32-x64-msvc": "0.5.8" }, "os": [ "linux", "win32", "darwin" ], "cpu": [ "x64", "arm64" ] }, "sha512-+OopMI1wM/NvAJTHf3O3+beHd1YfKLnSVsOGBl3/7UBDZ4ydVadkbBk5Hjjs9d3ALC5rBaftMY59AvwyC8MzPw=="],
+
+    "node-domexception": ["node-domexception@1.0.0", "", {}, "sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ=="],
+
+    "node-fetch": ["node-fetch@3.3.2", "", { "dependencies": { "data-uri-to-buffer": "^4.0.0", "fetch-blob": "^3.1.4", "formdata-polyfill": "^4.0.10" } }, "sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA=="],
+
+    "promise-limit": ["promise-limit@2.7.0", "", {}, "sha512-7nJ6v5lnJsXwGprnGXga4wx6d1POjvi5Qmf1ivTRxTjH4Z/9Czja/UCMLVmB9N93GeWOU93XaFaEt6jbuoagNw=="],
+
+    "typescript": ["typescript@5.8.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ=="],
+
+    "undici-types": ["undici-types@6.19.8", "", {}, "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="],
+
+    "web-streams-polyfill": ["web-streams-polyfill@3.3.3", "", {}, "sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw=="],
+
+    "ws": ["ws@8.18.2", "", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ=="]
+  }
+}
