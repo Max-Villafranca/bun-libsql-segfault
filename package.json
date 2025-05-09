@@ -1,0 +1,15 @@
+{
+  "name": "bun-libsql-bug",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "scripts": {
+    "bug": "bun bun_libsql_bug.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@libsql/client": "0.15.0-pre.1"
+  }
+}
